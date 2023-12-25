@@ -44,9 +44,9 @@ setISopen(false)
             
                 <button onClick={handleopn} className="fixed  right-4 rounded-full 
                bottom-6 pb-4 text-5xl h-[60px] w-[60px] bg-blue-500 text-white px-2">+</button>
-           <div  className={` bg-green-500 [#DC4005] p-10 mx-[30%] mt-2 rounded absolute  ${isOpen === true ? "block" :"hidden"}`}>
+           <div  className={` bg-green-500 [#DC4005] mt-4 mx-4 w-[350px] p-10 sm:mx-[30%] sm:mt-2 rounded absolute  ${isOpen === true ? "block" :"hidden"}`}>
            <i  onClick={handlclose} class="fa-solid fa-x text-3xl
-            text-red-600 ml-[385px] mt-0 ab"></i>
+            text-white sm:ml-[385px] ml-[280px] absolute top-[4px] mt-0 ab"></i>
                 {/* <i class="fa-solid fa-x"></i> */}
                 {/* <form className="">
                     <input value={title} onChange={(event)=>{
@@ -60,7 +60,7 @@ settile(event.target.value)
                     
                                   {/* </form> */} 
                                   <form>
-       <input value={title} onChange={(event) =>{settile(event.target.value);}}className='h-[50px] w-[300px] ' type="text"  placeholder='Enter title'/>
+       <input value={title} onChange={(event) =>{settile(event.target.value);}}className='h-[50px] w-[300px] mr-4 mt-2 ' type="text"  placeholder='Enter title'/>
          <br/>
     <input ref={imagRefence}  onChange={(e)=>{setimage(e.target.files[0]);}}
     className='mt-5 file:bg-purple-500 file:border-0 file:p-3 file:rounded' type="file"/>
